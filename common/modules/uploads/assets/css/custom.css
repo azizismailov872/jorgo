@@ -1,0 +1,17 @@
+#files-upload
+{
+	overflow:hidden;
+}
+
+.file_wrap
+{
+	float:left;
+	margin:20px 0 0 20px;
+	overflow:hidden;
+}
+
+.file_delete_wrap
+{
+	height:20px;
+	overflow:hidden;
+}
