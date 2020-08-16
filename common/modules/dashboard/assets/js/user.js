@@ -55,7 +55,8 @@ $(document).ready(function()
 	});
 	
 	$('#create-user-form').on('beforeSubmit', function()
-	{
+	{	
+		alert('Нажал');
 		data = $(this).serialize() + "&" + $("#edit-group-form").serialize();
 		url = 'add-user';
 		alert_id = 'create-user-container';

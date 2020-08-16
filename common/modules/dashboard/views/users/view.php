@@ -16,7 +16,7 @@ $title = (isset($this->params['title'])) ? $this->params['title'] : '';
 					<div class="profile_img">
 						<div id="crop-avatar">
 							<!-- Current avatar -->
-							<?= Html::img(Url::to('@dashboard_images'.DIRECTORY_SEPARATOR.'picture.jpg'), ['alt'=>'Avatar', 'title'=>'Change the avatar', 'class'=>'img-responsive avatar-view']) ?>
+							<?= Html::img(Url::to('@dashboard_images'.DIRECTORY_SEPARATOR.'img.jpg'), ['alt'=>'Avatar', 'title'=>'Change the avatar', 'class'=>'img-responsive avatar-view']) ?>
 						</div>
 					</div>
 					<h3><?= $model->username; ?></h3>
@@ -34,7 +34,35 @@ $title = (isset($this->params['title'])) ? $this->params['title'] : '';
                       <?= Html::a('<i class="fa fa-edit m-right-xs" style="margin-right:5px;"></i>'.Yii::t('form', 'Edit Profile'), ['update', 'id'=>$model->id], ['id'=>'create-user', 'class' => 'btn btn-success']) ?>
                       <br />
 				</div>
-				<div class="col-md-9 col-sm-9 col-xs-12">123</div>
+				<div class="col-md-9 col-sm-9 col-xs-12">
+					<div class="row">
+						<div class="col-md-9 col-xs-12">
+							<h2 class="title">
+								Информация о пользователе:
+							</h2>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-9 col-xs-12">
+							<h2 class="title">
+								Почта
+							</h2>
+							<p>
+								<?= Yii::$app->user->identity->email;?>
+							</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-9 col-xs-12">
+							<h2 class="title">
+								Дополнительная информация
+							</h2>
+							<p>
+								Нет инфомрации.
+							</p>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>

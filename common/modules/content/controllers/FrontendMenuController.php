@@ -49,6 +49,7 @@ class FrontendMenuController extends Controller
     public function actionIndex()
     {
 		$url = pathinfo(parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH), PATHINFO_BASENAME);
+		
 		$title = '';
 		$metaTitle = '';
 		$metaDesc = '';

@@ -37,7 +37,7 @@ $staticContent = (isset($this->params['staticContent'])) ? $this->params['static
 			<div class="container">
 				<div class="header-in">
 					<h1 class="logo">
-						<?= Html::a(Html::img(Url::to('@frontend_images'.DIRECTORY_SEPARATOR.'logo.png'), ['alt'=> 'logo', 'title'=>'logo']), '/', []) ?>
+						 <?= Html::a(Html::img(Url::to('@frontend_images'.DIRECTORY_SEPARATOR.'logo.png'), ['alt'=> 'logo', 'title'=>'logo']), '/', []) ?>
 					</h1>
 					<div class="nav-wrap">
 						<nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -74,7 +74,7 @@ $staticContent = (isset($this->params['staticContent'])) ? $this->params['static
 				<div class="footer-in">
 					<div class="f-left">
 						<!-- Default dropup button -->
-						<div class="btn-group dropup">
+						<!-- <div class="btn-group dropup">
 						  <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 							<i class="fas fa-globe-africa"></i>Русский
 						  </button>
@@ -82,14 +82,14 @@ $staticContent = (isset($this->params['staticContent'])) ? $this->params['static
 							<button class="dropdown-item" type="button">English</button>
 							<button class="dropdown-item" type="button">Кыргызча</button>
 						  </div>
-						</div>
+						</div> -->
 					</div>
 					<div class="f-middle"><?= isset($staticContent['bottom-years']) ? $staticContent['bottom-years'] : ''; ?></div>
 					<div class="f-right">
 						<ul class="social">
-							<li><a href="#"><i class="fab fa-instagram"></i></a></li>
-							<li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
-							<li><a href="#"><i class="fab fa-odnoklassniki-square"></i></a></li>
+							<li><a href="https://www.instagram.com/jorgo.kg/"><i class="fab fa-instagram"></i></a></li>
+							<li><a href="https://www.facebook.com/jorgo.kg/"><i class="fab fa-facebook-square"></i></a></li>
+							<li><a href="https://ok.ru/jorgo"><i class="fab fa-odnoklassniki-square"></i></a></li>
 							<li><a href="#"><i class="fab fa-youtube"></i></a></li>
 						</ul>
 					</div>

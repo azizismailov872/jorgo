@@ -157,6 +157,7 @@ class UsersController extends Controller
         
         //Set page titles
         $this->view->params['title'] = Yii::t('form', 'Users');
+
         $this->view->params['block_title'] = Yii::t('form', 'User`s list');
         
         //Render page
@@ -178,6 +179,7 @@ class UsersController extends Controller
     public function actionView($id)
     {
 		//Get model
+
 		$model = AdminUsers::find()->with('group')->where('admin_users.id=:id', [':id' => $id])->one();
 		
 		if($model !== null) 
@@ -206,7 +208,9 @@ class UsersController extends Controller
     {
 		//Get models
 		$usersModel = new CreateUserForm();
+
 		$addGroupModel = new AddGroupForm();
+
 		$editGroupModel = new EditGroupForm();
 		
 		//Set page title
@@ -236,8 +240,8 @@ class UsersController extends Controller
     public function actionAddUser()
     {
 		\Yii::$app->response->format = \yii\web\Response::FORMAT_JSON;
-		
 		$request = \Yii::$app->getRequest();
+
 		$result = false;
 		
 		//Initial vars
