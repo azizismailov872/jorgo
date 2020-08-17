@@ -29,7 +29,7 @@ $title = (isset($this->params['title'])) ? $this->params['title'] : '';
 				<div class="left_col scroll-view">
 					<div class="navbar nav_title" style="border: 0;">
 						<a href="index.html" class="site_title">
-							<i class="fa fa-paw"></i> 
+							<i class="fa fa-bookmark"></i> 
 							<span><?= Yii::t('menu', 'Dashboard'); ?>!</span>
 						</a>
 					</div>
